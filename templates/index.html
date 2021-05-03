@@ -1,0 +1,41 @@
+
+<html>
+<head>
+<style>
+
+.videostream{
+display:block;
+}
+
+</style>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<body>
+<div class="container">
+    <center>
+		<button > start </button>
+		<div>
+			<div>
+				<h3>Live Streaming</h3>
+				<img class ="videostream", src="{{ url_for('video_feed') }}" width="300 px">
+			</div>
+		</div>
+	</center>
+
+
+
+</div>
+</body>
+
+<script>
+$( "button" ).click(function() {
+  $( "img" ).toggle( "slow" );
+});
+
+
+</script>
+ 
+
+
+</html>
